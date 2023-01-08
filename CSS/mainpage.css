@@ -1,0 +1,254 @@
+/*======================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* /* /* html, body, div, span, applet, object, iframe, */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; 
+} 
+/* ============================================================== */
+
+	/* BASE STYLE */
+
+body{ color: white;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 15px;
+	  line-height: 1.4;
+	}
+.wrapper{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+}	
+
+.classheader{
+	height: 66px;
+	background: black;
+	
+
+
+}
+.classheader .logo{
+	float: left;
+	padding-top: 23px;
+	box-sizing: border-box;
+}
+.classheader .mainnav{
+	float: right;
+}
+
+.mainnav li{
+	float: left;
+	margin-left: 90px;
+}
+
+.mainnav li a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 66px;
+}
+.mainnav li a:hover{
+	color: red;
+}
+.banner{
+	background: url(../images/banner.png);
+	background-size: cover;
+	height: 612px; 
+}
+
+.bannerbloack{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 230px;
+	box-sizing: border-box;
+}
+.sub{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 300;
+	margin: 25px 0;
+}
+.learn{
+	display: block;
+	text-transform: uppercase;
+	color: inherit;
+	padding: 23px;
+	background-color:red;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-decoration: none;
+	width :166px;
+	
+}
+.learn:hover{
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+	border: 1px solid #ff0000;
+}
+.articles{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8f9f7+0,f4f9f9+44,f4f9f9+44,f4f9f9+47,000005+47,0c0008+100 */
+background: rgb(248,249,247); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(248,249,247,1) 0%, rgba(244,249,249,1) 44%, rgba(244,249,249,1) 44%, rgba(244,249,249,1) 47%, rgba(0,0,5,1) 47%, rgba(12,0,8,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(248,249,247,1) 0%,rgba(244,249,249,1) 44%,rgba(244,249,249,1) 44%,rgba(244,249,249,1) 47%,rgba(0,0,5,1) 47%,rgba(12,0,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(97deg,  rgba(248,249,247,1) 0%,rgba(244,249,249,1) 44%,rgba(244,249,249,1) 44%,rgba(244,249,249,1) 47%,rgba(0,0,5,1) 47%,rgba(12,0,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f7', endColorstr='#0c0008',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+article{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding-top: 60px;
+	padding-left: 10px;
+}
+.articles>.wrapper::after , .footer>.wrapper::after{
+	content: '.';
+	font-size: 0;
+	height: 1px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+article :first-of-type{
+	padding-right: 65px;
+	
+}
+article :last-of-type{
+	padding-right: 65px;
+}
+h2{
+	font-size: 36px;
+	font-weight: 300;
+}
+h2::after{
+	content: '.';
+	font-size: 0;
+	display: block;
+	height: 2px;
+	width: 38px;
+	background: red;
+	margin: 25px 0 28px;
+
+}
+.Quote{
+	font-size: 22px;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+.Text{
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+.bc{
+	color: black;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.footer{
+	background: #111111;
+	padding-top: 25px;
+}
+.about{
+	float: left;
+	width: 25%;
+}
+.about li:hover{
+	cursor: pointer;
+	color: red;
+}
+.footer h3{
+	font-size: 19px;
+	text-transform: uppercase;
+}
+.footer h3::after{
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px 0;
+}
+.footer li{
+	font-size: 15px;
+	padding-top: 11px;
+	color: #999;
+}
+.copy{
+	margin-top: 33px;
+	color: #585858;
+}
+
+.fb,.gp,.tw{
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+.social li{
+	display: inline-block;
+}
+
+.tw:hover{
+	background: white;
+	color: red;
+}
+.gp:hover{
+	background: white;
+	color: red;
+}
+.fb:hover{
+	background: white;
+	color: red;
+}
